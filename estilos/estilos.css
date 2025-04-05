@@ -1,0 +1,8 @@
+/*Aquí va a ir los estilos CSS para el index.html*/
+/*Selector universal es el asterísco (*)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: ;
+
+}
