@@ -1,8 +1,37 @@
 /*Aquí va a ir los estilos CSS para el index.html*/
 /*Selector universal es el asterísco (*)*/
-*{
+/** {
     margin: 0;
     padding: 0;
-    box-sizing: ;
+    /*box-sizing: border-box;*/
+    /*background-color: beige;
+}*/
 
+/*Estilos al body
+body {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
 }
+
+/*Estilo al header
+header {
+    background-color: rgb(221, 157, 96);
+    text-align: right;
+}*/
+/*
+header h1 {
+    color: rgb(168, 99, 35);
+}*/
+/*
+.menu {
+    text-align: center;
+    background-color: rgb(235, 176, 14);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}*/
