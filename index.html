@@ -1,55 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Cafetería San Francisco</title>
-    <!--<style>
-        body{
-            background-color: #c2dbd8;
-        }
-        div{
-            width: 70%;
-            background-color: bisque;
-        }
-        .cabecera-derecha{
-            width: 80%;
-            background-color: antiquewhite;
-
-        }
-        /*.cabecera-izquierda{
-            width: 20%;
-            background-color: blue;
-            margin-top: -20%;
-            margin-left: 1200px;
-        }*/
-
-        a{
-            color: white;
-        }
-        .menu{
-           
-            color: turquoise;
-        }
-
-        /*dos botones no pueden tener el mismo id*/
-        #btn-acerca-de{
-            background-color: black;
-            /*atributo padding genera márgenes alrededor de mi elemento
-            en este orden: arriba, derecha, abajo, izquierda*/
-            padding: 10px 30px 20px 60px;
-            /*margin me da márgenes externos en cada elemento*/
-            margin: 10px;
-            /*tipo de fuente*/
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        
-        
-    </style>-->
 
 </head>
-<body> 
+
+<body>
     <!--Los nombres de los proyectos no puden tener espacios, por eso se usa el guion bajo(_)
     o el guion medio (-) para separar las palabras. En este caso se usó el guion bajo
     Tampoco puede utilizar o empezar con símbolos especiales o números
@@ -58,23 +22,19 @@
     <!--Inicio del header-->
     <header>
         <!--Menú de navegación-->
-         <!--se ingresa div para evitar que se aplique formato con CSS-->
-        <div>
+        <!--se ingresa div para evitar que se aplique formato con CSS-->
+        <div class="contenedor">
             <h1>CAFETERÍA</h1>
-            <hr>
-            <nav>
+            <nav class="menu">
                 <!--a*4-->
                 <a href="#" id="btn-acerca-de">Acerca de</a>
-                <a class= menu href="#" id="btn-menu">Menú</a>
+                <a class=menu href="#" id="btn-menu">Menú</a>
                 <a href="#" id="btn-galeria">Galería</a>
                 <a href="#" id="btn-ubicacion">Ubicación</a>
-    
+
             </nav>
-            <hr>
         </div>
-        <!--<div>
-            <a href="otro menu"></a>
-        </div>-->
+
         <div>
             <h1>Cafetería <span>San Francisco</span></h1>
             <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
@@ -83,49 +43,135 @@
     </header>
     <!--Fin del header-->
 
-    <!--Inicio sección mail-->
-    <section>
+    <!--Inicio sección main-->
+    <section class="main">
         <!--Inicio Acerca de-->
         <section id="btn-acerca-de">
             <div>
                 <div>
-                    <img src="img/Estantería1.jpeg" alt="">
+                    <img src="img/acerca_de.jpeg" alt="">
                 </div>
                 <article>
                     <h3>Acerca de</h3>
-                                      
+
                     <p>
-                        En el corazón del bullicioso centro de Quito, en los años 60, 
-                        nació una cafetería que se convertiría en un refugio para los soñadores 
-                        y bohemios de la ciudad. Fundada en 1963 por la familia Velasco, 
-                        "Cafetería San Francisco" fue una propuesta revolucionaria, 
-                        un pequeño espacio acogedor donde el aroma del café tostado se mezclaba 
-                        con las notas de jazz y boleros que sonaban suavemente en el fondo. 
-                        Aquellos primeros clientes, vestidos con elegancia, entraban al local en 
+                        En el corazón del bullicioso centro de Quito, en los años 60,
+                        nació una cafetería que se convertiría en un refugio para los soñadores
+                        y bohemios de la ciudad. Fundada en 1963 por la familia Velasco,
+                        "Cafetería San Francisco" fue una propuesta revolucionaria,
+                        un pequeño espacio acogedor donde el aroma del café tostado se mezclaba
+                        con las notas de jazz y boleros que sonaban suavemente en el fondo.
+                        Aquellos primeros clientes, vestidos con elegancia, entraban al local en
                         busca de una taza de café que no solo les despertara, sino que los transportara
                         a otro tiempo, a un lugar de intimidad donde el ruido del mundo se desvanecía.
-                        En sus mesas de madera gastada, se tejían historias de amor y arte, entre sorbos 
+                        En sus mesas de madera gastada, se tejían historias de amor y arte, entre sorbos
                         de un espresso que se disfrutaba lentamente, como un suspiro que sabía a revolución.
 
                     </p>
                     <p>
-                        La cafetería, ubicada en una calle empedrada del casco colonial, 
-                        se convirtió en punto de encuentro para escritores, artistas y estudiantes 
-                        que, con sus cuadernos abiertos, dejaban que la tinta de sus plumas fluya 
-                        mientras se deleitaban con las variedades de café importado que solo allí 
-                        se podían encontrar. Cada rincón de "El Rincón del Café" respiraba 
-                        nostalgia y rebeldía, como un canto a la vida en tiempos de cambios. 
-                        Sus paredes, adornadas con fotografías en blanco y negro de artistas y 
-                        poetas que pasaban por allí, parecían susurrar secretos del pasado, 
-                        mientras la luz tenue de las lámparas de hierro forjado invitaba a 
-                        conversaciones que desbordaban pasión. El café, siempre servido con una 
-                        sonrisa cálida, era el elixir que unía a los que soñaban con cambiar el 
+                        La cafetería, ubicada en una calle empedrada del casco colonial,
+                        se convirtió en punto de encuentro para escritores, artistas y estudiantes
+                        que, con sus cuadernos abiertos, dejaban que la tinta de sus plumas fluya
+                        mientras se deleitaban con las variedades de café importado que solo allí
+                        se podían encontrar. Cada rincón de "El Rincón del Café" respiraba
+                        nostalgia y rebeldía, como un canto a la vida en tiempos de cambios.
+                        Sus paredes, adornadas con fotografías en blanco y negro de artistas y
+                        poetas que pasaban por allí, parecían susurrar secretos del pasado,
+                        mientras la luz tenue de las lámparas de hierro forjado invitaba a
+                        conversaciones que desbordaban pasión. El café, siempre servido con una
+                        sonrisa cálida, era el elixir que unía a los que soñaban con cambiar el
                         mundo, y a los que solo querían disfrutar del simple placer de estar vivos
-                         en aquella época vibrante de la ciudad.</p>
+                        en aquella época vibrante de la ciudad.</p>
                 </article>
             </div>
 
-        </section>
+        </section><!--Fin Acerca de-->
+        <!--Inicio Menú-->
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="tiulo" id="platillos">Menú</h3>
+                <div class="contenedor-menu2">
+                    <!--Inicio sección comida-->
+                    <article>
+                        <p class="categoría">De comer</p>
+                        <div class="platillo">
+                            <p class="nombre">Arroz camarón</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El arroz con camarón viene arroz, camarón, plátano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Yaguarlocro</p>
+                            <p class="precio">$9.50</p>
+                            <p class="descripcion">El yaguarlocro es una sopa que incluye aguacate</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Fritada</p>
+                            <p class="precio">$5.50</p>
+                            <p class="descripcion">La fritada incluye carne de cerdo, mote, incurtido, papa frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Llapingacho</p>
+                            <p class="precio">$10.50</p>
+                            <p class="descripcion">El llapingacho incluye tortilla de papa, chorizo, huevo frito,
+                                ensalada y aguacate</p>
+                        </div>
+                    </article><!--Fin de la sección comida-->
+                    <!--Inicio sección bebidas-->
+                    <article>
+                        <p class="categoria">Bebidas</p>
+                        <div class="platillo">
+                            <p class="nombre">Café</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripción">Café americano</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Capuccino</p>
+                            <p class="precio">$3.50</p>
+                            <p class="descripción">Capuccino contiene café expreso, leche vaporizada, espuma de leche
+                            </p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Mocaccino</p>
+                            <p class="precio">$3.50</p>
+                            <p class="descripción">Mocaccino contiene café expreso, chocolate, leche vaporizada</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Frapuccino</p>
+                            <p class="precio">$3.50</p>
+                            <p class="descripción">Frapuccino contiene café frío, leche entera, hielo, crema</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Cafelatte</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripción">Cafelatte contiene café expreso, leche vaporizada, espuma fina,
+                                saborizantes</p>
+                        </div>
+                    </article><!--Fin sección bebidas-->
+                </div>
+            </div>
+        </section><!--Fin sección menú-->
+        <!--Inicio de la sección galería-->
+        <section class="galeria" id="galeria">
+            <div class="foto">
+                <img src="img/Americano.jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/Capuccino.jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/Mocaccino.jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/Frapuccino.jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/Cafelatte.jpeg" alt="cafe">
+            </div>
+        </section><!--Fin de la sección galería-->
+
+
     </section>
+
 </body>
+
 </html>

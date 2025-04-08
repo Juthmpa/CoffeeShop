@@ -1,37 +1,65 @@
+
 /*Aquí va a ir los estilos CSS para el index.html*/
-/*Selector universal es el asterísco (*)*/
-/** {
-    margin: 0;
-    padding: 0;
-    /*box-sizing: border-box;*/
-    /*background-color: beige;
-}*/
-
-/*Estilos al body
-body {
-    background-color: beige;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+*{
+    /*Elimina el margen por defecto de todos los elementos HTML*/
+    margin:0;
+    /*Elimina el espacio que hay entre el contenido de un elemento 
+    y su borde por defecto de todos los elementos HTML*/
+    padding:0;
+    /*Definimos el modelo de cajas para navegadores basados en weebkit
+    GoogleChrome, Internet Explorer, Edge*/
+    -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en mozilla
+    Firefox, Opera*/
+    -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en el estándar*/
+    box-sizing: border-box;
 }
 
-/*Estilo al header
-header {
-    background-color: rgb(221, 157, 96);
+/*Definimos los estilos para el body*/
+body{
+    /*Especificamos la familia de fuentes principal y alternativas*/
+    font-family: "Open Sans", Arial, sans-serif;
+    /*Definimos el tamaño base de fuente del sitio*/
+    font-size: 16px;
+}
+/*Trabajamos en los estilos de la clase contenedor*/
+.contenedor{
+    /*Definir el ancho del contenedor*/
+    width: 90%;
+    /*Definimos el color de fondo del contenedor*/
+    background-color: aqua;
+    /*Definimos el ancho máximo del contenedor*/
+    max-width: 1000px;
+    /*Definimos el margen en automático para centrar el contenedor */
+    margin: auto;
+    /*Ocultamos el desbordamiento del contenedor */
+    overflow: hidden;
+}
+/*Estilos al Header*/
+header{
+    /*Definimos el tamaño del header a un 100% del ancho disponible*/
+    width: 100%;
+    /*Establecemos una imagen de fondo y un color de respaldo por si no carga*/
+    background: url('../img/Fondo1.jpeg') #281ac0c;
+     /*Hacemos que la imagen de fondo cubra todo el header sin deformarse*/
+    background-size: cover;
+    /*Fijamos la imagen al fondo de la ventana para que no se desplace al hacer scroll*/
+    background-attachment: fixed;
+    /*Centramos la imagen horizontalmente y la posicionamos en la parte superior verticalmente*/
+    background-position: center 0;
+}
+/*Le damos estilo al header y que busque una clase que se llame contenedor*/
+header .contenedor{
+    /*Posicionamos el contenedor de forma relativa para que sus hijos posicionados se ubiquen respecto a él*/
+    position: relative;
+    /*Definimos la altura del header*/
+    height: 700px;
+}
+/*Le damos estilos al menú dentro del header*/
+header .menu{
+    /*Asignamos el 100% del ancho del header al menú*/
+    width: 100%;
+    /*Alineamos el contenido del menú a la derecha*/
     text-align: right;
-}*/
-/*
-header h1 {
-    color: rgb(168, 99, 35);
-}*/
-/*
-.menu {
-    text-align: center;
-    background-color: rgb(235, 176, 14);
 }
-a{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-    color: black;
-}*/
