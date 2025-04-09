@@ -27,8 +27,6 @@ body{
 .contenedor{
     /*Definir el ancho del contenedor*/
     width: 90%;
-    /*Definimos el color de fondo del contenedor*/
-    background-color: aqua;
     /*Definimos el ancho máximo del contenedor*/
     max-width: 1000px;
     /*Definimos el margen en automático para centrar el contenedor */
@@ -41,7 +39,7 @@ header{
     /*Definimos el tamaño del header a un 100% del ancho disponible*/
     width: 100%;
     /*Establecemos una imagen de fondo y un color de respaldo por si no carga*/
-    background: url('../img/Fondo1.jpeg') #281ac0c;
+    background: url('../img/bg.jpeg') #281a0c;
      /*Hacemos que la imagen de fondo cubra todo el header sin deformarse*/
     background-size: cover;
     /*Fijamos la imagen al fondo de la ventana para que no se desplace al hacer scroll*/
@@ -62,4 +60,90 @@ header .menu{
     width: 100%;
     /*Alineamos el contenido del menú a la derecha*/
     text-align: right;
+}
+/*Le damos estilos a los enlaces dentro del menú*/
+header .menu a{
+    /*Definimos el color de los enlaces*/
+    color: #fff;
+    /*Definimos el tamaño de la fuente de los enlaces*/
+    font-size: 20px;
+    /*Definimos el margen entre los enlaces*/
+    font-weight: 300;
+    /*Definimos el espaciado entre los enlaces*/
+    display: inline-block;
+    /*Definimos el margen*/
+    margin: 40px 20px;
+    /*Definimos la decoración*/
+    text-decoration: none;
+    /*Definimos la posición*/
+    position: relative;
+}
+
+/*Utilizamos la seudoclase hover*/
+header .menu a:hover{
+    /*Definimos el color de los enlaces al pasar el mouse*/
+    color: #18a08c;
+    /*Definimos la decoración*/
+    text-decoration: underline;
+}       
+/*Le damos estilos al texto*/
+header .texto{
+    /*Definimos el tamaño*/
+    width: 100%;
+    /*Definimos el color de los enlaces*/
+    color: #fff;
+    /*Definimos la posición*/
+    position: absolute;
+    /*Definimos la ubicación*/
+    top: 50%;
+    /*Definimos la alineación*/
+    margin-top: -52px;
+}
+header .texto .nombre{
+    /*Definimos el tamaño de la fuente de los enlaces*/
+    font-size: 50px;
+    /*Definimos el tamaño*/
+    font-weight: 600;
+}
+header .texto .nombre span{
+    /*Definimos el tamaño*/
+    font-weight: 300;
+    
+}
+header .texto h3{
+    /*Definimos el tamaño*/
+    font-weight: 300;
+    /*Definimos el tamaño de la fuente de los enlaces*/
+    font-size: 25px;
+    /*Definimos cursiva*/
+    font-style: italic;
+}
+/*--------MAIN--------*/
+.main{
+    /*Definimos la imagen*/
+    background: url('../img/bg.textura.jpeg');
+    background-repeat: repeat;
+}
+/*Le damos estilos a la sección acerca de*/
+.main .acerca-de .contenedor{
+    /*Definimos que sea visible*/
+    overflow: visible;
+    /*Definimos la posición*/
+    position: relative;
+
+}
+/*Le damos estilos a la sfoto*/
+.main .acerca-de .foto{
+    /*Definimos el tamaño*/
+    width: 80%;
+    /*Definimos la posición*/
+    position: absolute;
+    /*Definimos la alineación*/
+    left: 0;
+    /*Definimos la ubicación*/
+    top: auto;
+    /*Definimos el margen*/
+    z-index: 0;
+    /*Definimos la sombra*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
 }

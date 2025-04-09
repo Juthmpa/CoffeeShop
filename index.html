@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Cafetería San Francisco</title>
@@ -19,37 +20,34 @@
     Tampoco puede utilizar o empezar con símbolos especiales o números
     Tampoco los proyectos se generan o crea en mayúsculas
     No se puede tener un nombre del proyecto muy largo, por eso se recomienda usar nombres cortos-->
+    
+    
     <!--Inicio del header-->
     <header>
         <!--Menú de navegación-->
-        <!--se ingresa div para evitar que se aplique formato con CSS-->
         <div class="contenedor">
-            <h1>CAFETERÍA</h1>
+            
             <nav class="menu">
-                <!--a*4-->
                 <a href="#" id="btn-acerca-de">Acerca de</a>
-                <a class=menu href="#" id="btn-menu">Menú</a>
+                <a href="#" id="btn-menu">Menú</a>
                 <a href="#" id="btn-galeria">Galería</a>
                 <a href="#" id="btn-ubicacion">Ubicación</a>
-
             </nav>
-        </div>
 
-        <div>
-            <h1>Cafetería <span>San Francisco</span></h1>
-            <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
+            <div class="texto">
+                <h1 class="nombre">Cafetería <span>San Francisco</span></h1>
+                <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
+            </div>
         </div>
-
-    </header>
-    <!--Fin del header-->
+    </header><!--Fin del header-->
 
     <!--Inicio sección main-->
     <section class="main">
         <!--Inicio Acerca de-->
-        <section id="btn-acerca-de">
-            <div>
-                <div>
-                    <img src="img/acerca_de.jpeg" alt="">
+        <section class="acerca-de" id="btn-acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/acerca_de.jpeg" alt="Acerca de lobby">
                 </div>
                 <article>
                     <h3>Acerca de</h3>
@@ -81,7 +79,8 @@
                         conversaciones que desbordaban pasión. El café, siempre servido con una
                         sonrisa cálida, era el elixir que unía a los que soñaban con cambiar el
                         mundo, y a los que solo querían disfrutar del simple placer de estar vivos
-                        en aquella época vibrante de la ciudad.</p>
+                        en aquella época vibrante de la ciudad.
+                    </p>
                 </article>
             </div>
 
