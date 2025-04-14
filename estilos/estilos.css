@@ -33,6 +33,7 @@ body{
     margin: auto;
     /*Ocultamos el desbordamiento del contenedor */
     overflow: hidden;
+    
 }
 /*Estilos al Header*/
 header{
@@ -46,6 +47,7 @@ header{
     background-attachment: fixed;
     /*Centramos la imagen horizontalmente y la posicionamos en la parte superior verticalmente*/
     background-position: center 0;
+    
 }
 /*Le damos estilo al header y que busque una clase que se llame contenedor*/
 header .contenedor{
@@ -53,6 +55,8 @@ header .contenedor{
     position: relative;
     /*Definimos la altura del header*/
     height: 700px;
+    background-color: aqua;
+    
 }
 /*Le damos estilos al menú dentro del header*/
 header .menu{
@@ -60,6 +64,7 @@ header .menu{
     width: 100%;
     /*Alineamos el contenido del menú a la derecha*/
     text-align: right;
+    background-color: #be4c17;
 }
 /*Le damos estilos a los enlaces dentro del menú*/
 header .menu a{
@@ -141,9 +146,366 @@ header .texto h3{
     /*Definimos la alineación*/
     left: 0;
     /*Definimos la ubicación*/
-    top: auto;
+    top: -50px;
     /*Definimos el margen*/
     z-index: 0;
     /*Definimos la sombra*/
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+/*Le damos estilos a la foto en la sección acerca de*/
+.main .acerca-de .foto img{
+    /*Definimos la alineación*/
+    vertical-align: top;
+    /*Definimos la medida*/
+    width: 100%;
+}	
+
+.main .acerca-de article{
+    /*Definimos el color*/
+    background: #fff;
+    /*Definimos el margen*/
+    padding: 40px;
+    /*Definimos el tamaño*/
+    width: 50%;
+    /*Definimos la posición*/
+    position: relative;
+    /*Definimos la ubicación*/
+    top: 50px;
+    /*Definimos la alineación*/
+    z-index: 1;
+    /*Definimos que flote*/
+    float: right;
+    /*Definimos la sombra*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+/*Le damos estilos a los encabezados dentro de la sección acerca de*/
+.main .acerca-de article h3{
+    /*Definimos el tamaño*/
+    font-size: 50px;
+    /*Definimos el grosor*/
+    font-weight: 300;
+    /*Definimos el margen*/
+    margin-bottom: 40px;
+}
+/*Le damos estilos a los párrafos dentro de la sección acerca de*/
+.main .acerca-de article p{
+    /*Definimos la separación de letras*/
+    line-height: 20px;
+    /*Definimos el margen*/
+    margin-bottom: 15px;
+}
+/*Le damos estilos a la sección menú*/
+.main .menu{
+    /*Definimos el margen*/
+    padding-top: 630px;
+    /*Definimos el margen*/
+    margin-bottom: 50px;
+}
+.main .menu .titulo{
+    /*Definimos el tamaño*/
+    font-size: 40px;
+    /*Definimos el grosor*/
+    font-weight: 300;
+    /*Centramos título*/
+    text-align: center;
+    /*Definimos el margen*/
+    margin-bottom: 40px;
+}
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2{
+    /*Definimos el borde*/
+    border: 2px solid #000;
+    /*Definimos el color*/
+    background: #a6c5dc;
+    /*Definimos la separación*/
+    padding: 10px;
+    /*Definimos el overflow*/
+    overflow: hidden;
+    /*Definimos la sombra*/
+    box-shadow: 15px 0px 15px 0 rgba(0, 0, 0, 0.5);
+
+}
+.main .menu article{
+    /*Definimos el tamaño*/
+    width: 50%;
+    /*Definimos la alineación*/
+    float: left;
+    /*Definimos el margen*/
+    padding: 20px;
+    /*Definimos la sombra*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.main .menu .categoria{
+    /*Definimos el tamaño*/
+    font-size: 22px;
+    /*Definimos el grosor*/
+    font-weight: 700;
+    /*Definimos el margen*/
+    margin-bottom: 20px;
+    /*Centramos*/
+    text-align: center;
+}
+
+.main .menu .platillo{
+    /*Definimos el margen*/
+    margin-bottom: 30px;
+    /*Definimos la separación*/
+    padding-bottom: 20px;
+    /*Definimos un borde*/
+    border-bottom: 4px dotted #000;
+    /*Definimos el overflow*/
+    overflow: hidden;
+}
+.main .menu .nombre{
+    /*Definimos el tamaño*/
+    font-size: 20px;
+    /*Definimos el margen*/
+    margin-bottom: 10px;
+    /*Definimos que flote*/
+    float: left;
+}
+.main .menu .precio{
+    /*Definimos el tamaño*/
+    font-size: 20px;
+    /*Definimos el tamaño*/
+    margin-bottom: 15px;
+    /*Definimos que flote*/
+    float: right;
+}
+.main .menu .descripcion{
+    /*Definimos el tamaño*/
+    font-size: 16px;
+    /*Definimos el margen*/
+    margin-bottom: 15px;
+    /*Definimos el color*/
+    color: #000;
+    /*Definimos que se elimine el espacio entre ambos*/
+    clear: both;
+}
+/*Estilos galería*/
+.main .galeria{
+    /*Definimos que oculte lo que esté fuera*/
+    overflow: hidden;
+}
+/*Le damos estilos a la galería*/
+.main .galeria .foto{
+    /*Definimos el tamaño*/
+    width: 25%;
+    /*Definimos que flote*/
+    float: right;
+}
+.main .galeria .foto img{
+    /*Definimos el tamaño*/
+    width: 100%;
+    /*Definimos la alineación*/
+    vertical-align: top;
+    /*Definimos la opacidad*/
+    opacity: 0.7;
+}
+.main .galeria .foto img:hover{
+    /*Definimos la opacidad*/
+    opacity: 1;
+    /*Definimos la aceleración*/
+    -webkit-transition: all 0.3s ease;
+    /*Definimos la aceleración para navegadores de opera*/
+    -o transition: all 0.3s ease;
+    /*Definimos la aceleración para navegadores modernos*/
+    transition: all 0.3s ease;
+}
+/*Le damos estilos a la sección ubicación*/
+main .ubicacion{
+    /*Definimos el margen*/
+    padding: 60px;
+    /*Definimos el color*/
+    background: #fff;
+    /*Definimos que oculte lo que esté afuera*/
+    overflow: hidden;
+}
+/*Le damos estilos al título ubicación*/
+.main .ubicacion .titulo{
+    /*Centramos*/
+    text-align: center;
+    /*Definimos el tamaño*/
+    font-size: 40px;
+    /*Definimos el grosor de la linea*/
+    line-height: 40px;
+    /*Definimos el grosor*/
+    font-weight: 300;
+    /*Definimos el margen*/
+    margin-bottom: 40px;
+}
+/*Le damos estilos a la sección dirección*/
+.main .ubicacion .direccion{
+    /*Definimos que flote*/
+    float: left;
+    /*Definimos el tamaño*/
+    width: 50%;
+    /*Definimos la alineación*/
+    text-align: left;
+}
+/*Definimos estilo de horarios*/
+.main .ubicacion .horarios{
+    /*Definimos que flote*/
+    float: right;
+    /*Definimos el tamaño*/
+    width: 50%;
+    /*Definimos alineación del texto*/
+    text-align: left;
+    /*Definimos que elime lo que esta fuera*/
+    overflow: hidden;
+}
+/*Le damos estilos a los horarios*/
+.main .ubicacion .direccion .calle{
+    margin-bottom: 15px;
+
+}
+/*Le damos estilo al título horarios*/
+.main .ubicacion .horarios h4{
+    /*alineamos el texto*/
+    text-align: center;
+    /*fijamos margen*/
+    margin-bottom: 20px;
+}
+/*Estilos horarios entre y fin de semana*/
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+    /* Definimos el tamaño*/
+    width: 50%;
+    /* Definimos que flote */
+    float: left;
+    /* Definimos alineación del texto */
+    text-align: center;
+}
+/*Estilos mapa*/
+.main .mapa{
+    /*Definimos tamaño*/
+    width: 100%;
+    /*Definimos que se elimine lo que está fuera*/
+    overflow: hidden;
+}
+/*Estilo al link del mapa*/
+.main .mapa iframe{
+    /*Definimos el tamaño*/
+    width: 100%;
+    /*Definimos el máximo de medida*/
+    max-height: 600px;
+}
+/*-------footer--------*/
+footer{
+    background: #000;
+}
+
+footer .copyright{
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+/*----------- MEDIA QUERIES -----------*/
+
+/* Estilos para pantallas de máximo 800px (tablets y pantallas medianas) */
+@media screen and (max-width: 800px) {
+
+    /* Quita posición fija del contenedor del header para hacerlo fluido */
+    header .contenedor {
+        position: static; /* No es fijo ni absoluto */
+        height: auto;     /* Altura automática según contenido */
+    }
+
+    /* Ajusta el bloque de texto del header para que se vea mejor en pantallas pequeñas */
+    header .texto {
+        position: static; /* Permite que fluya en el documento */
+        margin: 100px 0;  /* Espacio superior e inferior amplio */
+    }
+
+    /* Centra los enlaces del menú en pantalla pequeña */
+    header .menu {
+        text-align: center; /* Centra horizontalmente los elementos del menú */
+    }
+
+    /* Aumenta el espaciado entre enlaces del menú */
+    header .menu a {
+        margin: 10px 20px; /* Margen entre enlaces (vertical y horizontal) */
+    }
+
+    /* Reduce el tamaño del nombre principal en el header */
+    header .texto .nombre {
+        font-size: 30px; /* Texto más pequeño para títulos */
+    }
+
+    /* Reduce el subtítulo en el header */
+    header .texto h3 {
+        font-size: 18px; /* Subtítulo más legible en pantallas pequeñas */
+    }
+
+    /* Hace que la imagen de la sección "acerca de" use todo el ancho disponible */
+    .main .acerca-de .foto {
+        width: 100%;           /* Ocupa todo el ancho del contenedor */
+        position: relative;    /* Posición normal para mantener estructura */
+    }
+
+    /* Ajusta el artículo (texto) de la sección "acerca de" */
+    .main .acerca-de article {
+        position: relative;    /* Posición relativa para colocar contenido */
+        width: 100%;           /* Ocupa el 100% del ancho disponible */
+        top: -50px;            /* Lo mueve hacia arriba */
+        transform: translate(0px, 0); /* Cancela cualquier desplazamiento horizontal */
+    }
+
+    /* Agrega espacio superior antes del menú de productos */
+    .main .menu {
+        padding-top: 300px; /* Empuja hacia abajo para dar espacio */
+    }
+
+    /* Hace que cada artículo del menú use todo el ancho */
+    .main .menu article {
+        width: 100%; /* Cada producto ocupa una línea completa */
+    }
+
+    /* Muestra dos imágenes por fila en la galería */
+    .main .galeria .foto {
+        width: 50%; /* Cada imagen ocupa la mitad del ancho */
+    }
+
+    /* Centra y reduce el ancho del mapa */
+    .main .mapa {
+        width: 80%;      /* Reduce el tamaño del mapa */
+        margin: auto;    /* Centra el mapa horizontalmente */
+    }
+}
+
+/* Estilos adicionales para pantallas aún más pequeñas: hasta 400px (teléfonos móviles) */
+@media screen and (max-width: 400px) {
+
+    /* Aumenta el tamaño del título en "acerca de" para destacarlo mejor */
+    .main .acerca-de article h3 {
+        font-size: 34px;       /* Texto más grande */
+        margin-bottom: 10px;   /* Espacio inferior */
+    }
+
+    /* Reduce el tamaño del nombre y precio de los productos */
+    .main .menu article .nombre,
+    .main .menu article .precio {
+        font-size: 16px;       /* Tamaño reducido del texto */
+        line-height: 16px;     /* Espaciado entre líneas ajustado */
+    }
+
+    /* Las imágenes de la galería ahora ocupan todo el ancho */
+    .main .galeria .foto {
+        width: 100%;           /* Imagen ocupa toda la pantalla */
+    }
+
+    /* Espacio extra inferior en la dirección */
+    .main .ubicacion .direccion {
+        margin-bottom: 15px;   /* Espacio entre dirección y horarios */
+    }
+
+    /* Dirección y horarios ahora están uno debajo del otro y centrados */
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios {
+        width: 100%;           /* Ocupan todo el ancho */
+        float: none;           /* Elimina el flotado para no ponerlos en línea */
+        text-align: center;    /* Texto centrado horizontalmente */
+    }
 }
